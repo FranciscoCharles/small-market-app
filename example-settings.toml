@@ -1,0 +1,16 @@
+[default]
+TITLE = "Site de gestão de mini mercado"
+SECRET_KEY = "minhasecretkey"
+PORT = 3000
+SQLALCHEMY_DATABASE_URI = ""
+SQLALCHEMY_TRACK_MODIFICATIONS = false
+FLASK_ADMIN_SWATCH = 'cerulean'
+EXTENSIONS = [
+    "application.ext.appearance:init_app",
+    "application.ext.database:init_app",
+    "application.ext.auth:init_app",
+    "application.ext.admin:init_app",
+    "application.blueprint.main:init_app",
+    "application.blueprint.admin:init_app",
+    "application.ext.command:init_app",
+]
