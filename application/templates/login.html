@@ -1,0 +1,37 @@
+{% extends 'components/base.html' %}
+{% block styles %}
+{% include 'components/global-styles.html' %}
+<link rel="stylesheet" href='static/css/form.css'>
+{% endblock %}
+{% block navbar %}
+{% include 'components/navbar.html' %}
+{% endblock %}
+{% block content %}
+<!-- from "macros.html" import show_menu with context -->
+<div class="flex-center content-container">
+    <div class="flex-center content">
+        <div class="form-login">
+            <form action="" method="post">
+                <fieldset>
+                    <div class="form-input">
+                        <label for="">Email</label>
+                        <input required="required" value="{{email}}" type="email" name="email" placeholder="Insira um email">
+                    </div>
+                    <div class="form-input">
+                        <label for="">Senha</label>
+                        <input required="required" type="password" name="password" placeholder="********">
+                    </div>
+                    <input id="submit-button" type="submit" value="Logar">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block footer %}
+{% include 'components/footer.html' %}
+{% endblock %}
+{% block scripts %}
+{{super()}}
+<script type="text/javascript" src="static/js/footer.js"></script>
+{% endblock %}

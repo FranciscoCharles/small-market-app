@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body{
+    
+    height: 100vh;
+    min-width: 6rem;
+    width: 100vw;
+    font-size: 62.5%;
+    background-image: url('/static/asserts/background.jpg');
+    background-repeat: repeat-y;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: grid;
+    grid-template-rows: min-content auto 3rem;
+    overflow-x: hidden;
+    grid-template-areas:
+        "navbar"
+        "content"
+        "footer";
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

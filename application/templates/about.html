@@ -1,0 +1,39 @@
+{% extends 'components/base.html' %}
+{% block styles %}
+{% include 'components/global-styles.html' %}
+<link rel="stylesheet" href='static/css/about.css'>
+{% endblock %}
+{% block navbar %}
+{% include 'components/navbar.html' %}
+{% endblock %}
+{% block content %}
+<div class="flex-center content">
+    <div class="information">
+        <h1>Sobre esse projeto</h1>
+        <div class="text-information">
+            <p>
+                &emsp;&emsp;Este projeto é apenas para fins de aprendizado. O objetivo é conhecer melhor sobre o
+                micro frameowrk flask e como o mesmo funciona. Outro objetivo é para me desafiar a melhorar
+                sobre o uso de css mesmo que meu foco não seja frontend.
+            </p>
+            <p>
+                Este projeto utiliza:
+            </p>
+            <ul>
+                <li><b>Python</b></li>
+                <li><b>Flask</b></li>
+                <li><b>Javascript</b></li>
+                <li><b>Html</b></li>
+                <li><b>Css</b></li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block footer %}
+{% include 'components/footer.html' %}
+{% endblock %}
+{% block scripts %}
+{{super()}}
+<script type="text/javascript" src="static/js/footer.js"></script>
+{% endblock %}

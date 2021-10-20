@@ -1,0 +1,21 @@
+{% extends 'components/base.html' %}
+{% block styles %}
+{% include 'components/global-styles.html' %}
+{% endblock %}
+{% block navbar %}
+{% include 'components/navbar.html' %}
+{% endblock %}
+{% block content %}
+<!-- from "macros.html" import show_menu with context -->
+<div class="flex-center content-container">
+    <div class="flex-center content">
+    </div>
+</div>
+{% endblock %}
+{% block footer %}
+{% include 'components/footer.html' %}
+{% endblock %}
+{% block scripts %}
+{{super()}}
+<script type="text/javascript" src="static/js/footer.js"></script>
+{% endblock %}

@@ -1,0 +1,15 @@
+.container-form{
+    background: rgb(150, 150, 150);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    background: white;
+    min-height: 25rem;
+    width: 40rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    box-shadow:  0.5rem 0.5rem 0.5rem 0.5rem rgba(92,92,92,.5);
+}
